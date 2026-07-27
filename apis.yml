@@ -1,7 +1,18 @@
 aid: gate-space
 name: GATE Space
-description: GATE Space is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GATE Space is an Austrian aerospace company redefining in-space mobility with
+  high-thrust chemical propulsion systems for satellites, capsules, and landing
+  vehicles. A TU Wien spinout founded in 2022 and backed by Techstars, the
+  company builds the GATE Jetpack — a plug-and-play, refuelable propulsion module
+  running on green propellants that lets satellites perform rapid orbit and
+  attitude maneuvers with no integration effort. Its patented engines have been
+  validated across 8,000+ hot-fire tests in atmospheric and vacuum conditions,
+  manufactured in a European facility with a 98% local supply chain. GATE Space
+  raised €6.3M via the EIC Accelerator and its propulsion system will fly on
+  BeaconSat, Austria's first military satellite. This is a hardware manufacturer
+  with no public developer/API surface; the profile is maintained in the API
+  Evangelist network as a company identity record.
 url: https://raw.githubusercontent.com/api-evangelist/gate-space/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +20,31 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://gate.space/wp-content/uploads/2023/04/Gate_Space_Produktfotos_2550px_72ppi_1-1024x683.jpg
 tags:
 - Company
+- Aerospace
+- Space
+- Satellite
+- Propulsion
+- Space Mobility
+- Hardware
+- Defense
+- Austria
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gate-space-domain-security.yml
 - type: Website
   url: https://gate.space/
+- type: Products
+  url: https://gate.space/products/
+- type: PrivacyPolicy
+  url: https://gate.space/privacy-policy/
+- type: Imprint
+  url: https://gate.space/imprint/
+- type: Careers
+  url: https://jobs.polymer.co/gate-space
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
